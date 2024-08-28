@@ -1,0 +1,31 @@
+from random import randint
+ran = randint(1,101)
+print(ran)
+print("WELCOME TO THE GUESSIING GAME\n\nyou have to guess a number randomly selected from 1 to 100\nAnd if your guess is closer or far away , you will be hinted accordingly")
+
+guesslist=[]
+
+while True:
+    x=int(input('Enter your guess:'))
+    guesslist.append(x)
+    check= abs(ran-x)
+    if x<1 or x>100:
+        print('OUT OF BOUNDS')
+
+    elif x==ran:
+        print('you have guess correctly in', len(guesslist))
+        break
+    #ran
+    elif check<=10:
+        print('WARM!')
+    elif ran-x <= check:
+            print('WARMER!')
+        else:
+            
+            print('COLDER!')
+    else:
+        print('COLD!')
+            
+    
+    
+        
