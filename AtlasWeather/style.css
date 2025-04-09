@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+  
+  .weather-card {
+    background: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #map {
+    height: 300px;
+    border-radius: 16px;
+    margin-top: 20px;
+  }
+  
+  .input-group input {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-right: 0;
+  }
+  
+  .input-group button {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  h2 {
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
