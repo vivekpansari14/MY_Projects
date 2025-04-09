@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neo-WALLET | Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-4">
+  <div class="container">
+    <h2 class="mb-4">Neo-WALLET Dashboard</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><button onclick="checkBalance()" class="btn btn-outline-primary w-100">💰 Check Balance</button></div>
+      <div class="col-md-4"><button onclick="depositMoney()" class="btn btn-outline-success w-100">📥 Deposit</button></div>
+      <div class="col-md-4"><button onclick="withdrawMoney()" class="btn btn-outline-danger w-100">📤 Withdraw</button></div>
+      <div class="col-md-6"><button onclick="quickCash()" class="btn btn-outline-warning w-100">⚡ Quick Cash</button></div>
+      <div class="col-md-6"><button onclick="getMiniStatement()" class="btn btn-outline-info w-100">📄 Mini Statement</button></div>
+      <div class="col-md-12">
+        <div class="input-group mt-3">
+          <input type="text" id="receiver" placeholder="Receiver Account No" class="form-control">
+          <input type="number" id="transfer_amt" placeholder="Amount" class="form-control">
+          <button onclick="transferMoney()" class="btn btn-dark">Transfer</button>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <pre id="output" class="bg-white p-3 rounded border"></pre>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
